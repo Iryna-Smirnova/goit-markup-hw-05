@@ -132,7 +132,8 @@ a {
     opacity 250ms var(--timing-function);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.current-page::after {
   opacity: 1;
   transform: scaleX(1);
 }
@@ -797,6 +798,7 @@ a.current-page:visited {
   height: 581px;
   border-radius: 4px;
   background-color: var(--white-color);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .modal-backdrop.is-hidden .modal {
@@ -823,9 +825,14 @@ a.current-page:visited {
 }
 
 .vector {
+  margin: auto;
   padding: 0;
-  width: 18px;
-  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 11px;
+  height: 11px;
   cursor: pointer;
-  color: var(--black-color);
+  fill: currentColor;
 }
