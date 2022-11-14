@@ -606,8 +606,8 @@ a.current-page:visited {
   color: var(--white-color);
 }
 
-.working-list:hover .description,
-.working-list:focus .description {
+.working-link:hover .description,
+.working-link:focus .description {
   transform: translateY(0);
 }
 
