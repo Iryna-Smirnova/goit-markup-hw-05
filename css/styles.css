@@ -363,7 +363,6 @@ a.current-page:visited {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .team-list .social-item:last-child {
@@ -385,12 +384,6 @@ a.current-page:visited {
 .team-list .social-link:focus {
   background-color: var(--primary-accent-color);
 }
-
-.team-list .social-item:hover,
-.team-list .social-item:focus {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 
 .team-list .social-icon {
   fill: var(--secondary-accent-color);
@@ -550,9 +543,9 @@ a.current-page:visited {
 
   background-color: #f5f4fa;
   color: var(--primary-text-color);
-  transition: color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), 
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button-filter.secondary:hover,
@@ -785,9 +778,7 @@ a.current-page:visited {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: background-color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .social .social-icon {
@@ -797,7 +788,6 @@ a.current-page:visited {
 .social .social-link:hover,
 .social .social-link:focus {
   background-color: var(--primary-accent-color);
-  box-shadow: none;
 }
 
 /* МОДАЛЬНЕ ВІКНО */
